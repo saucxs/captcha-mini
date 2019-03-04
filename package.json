@@ -1,0 +1,25 @@
+{
+  "name": "captcha",
+  "version": "1.0.0",
+  "description": "一个验证码（identifying code）生成的插件，使用的是canvas显示",
+  "main": "captcha.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saucxs/captcha.git"
+  },
+  "keywords": [
+    "captcha"
+  ],
+  "optionalDependencies": {},
+  "readme": "使用手册https://github.com/saucxs/captcha",
+  "readmeFilename": "README.md",
+  "author": "https://github.com/saucxs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saucxs/captcha/issues"
+  },
+  "homepage": "https://github.com/saucxs/captcha#readme"
+}
