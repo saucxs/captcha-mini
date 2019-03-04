@@ -109,7 +109,7 @@ Captcha.prototype.font = function () {
     let colorStyle = this.fontStyle + 'Style';
     for (let i = 0; i < this.length; i++) {
         let fontWidth = this.paint.measureText(str[i]).width;
-        let x = this.getRandom(this.canvas.width / this.length  * i + 0.2 * fontWidth, (this.canvas.width / this.length) * i +  0.5 * fontWidth);
+        let x = this.getRandom(this.canvas.width / this.length * i + 0.2 * fontWidth, (this.canvas.width / this.length) * i + 0.5 * fontWidth);
         /*随机获取字体的旋转角度*/
         let deg = this.getRandom(-6, 6);
         /*随机获取文字颜色*/
@@ -120,6 +120,7 @@ Captcha.prototype.font = function () {
         this.paint.rotate(deg * Math.PI / 180);
         this.paint[fontStyle](str[i], x, this.canvas.height / 2);
         this.paint.restore();
+
     }
 };
 

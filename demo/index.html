@@ -11,12 +11,15 @@
 <h2>传值</h2>
 <canvas width="240" height="90" id="captcha2"></canvas>
 </body>
-<script src="captcha.js"></script>
+<script src="../captcha.js"></script>
 <script>
-    let captcha1 = new Captcha(); // 不传值，统一走默认值
+    /*不传值，统一走默认值*/
+    let captcha1 = new Captcha();
     captcha1.draw(document.querySelector('#captcha1'), r => {
         console.log(r, '验证码1');
     });
+
+    /*传值,参数配置值，选择性配置*/
     let captcha2 = new Captcha({
         lineWidth: 1,   //线条宽度
         lineNum: 6,       //线条数量
