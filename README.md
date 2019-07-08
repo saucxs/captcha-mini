@@ -1,5 +1,27 @@
-# captcha
-`captcha.js`是一个生成验证码的插件，使用js和canvas生成的，确保后端服务被暴力攻击，简单判断人机以及系统的安全性，体积小，功能多，支持配置。
+# [captcha-mini](https://github.com/saucxs/captcha-mini)
+
+[![](https://img.shields.io/badge/Powered%20by-saucxs%20-brightgreen.svg)](https://github.com/saucxs/watermark-dom)
+[![GitHub license][license-image]][license-url]
+[![GitHub version][version-image]][version-url]
+[![GitHub stars][stars-image]][stars-url]
+[![GitHub forks][forks-image]][forks-url]
+[![GitHub issues][issues-image]][issues-image]
+[![npm download][download-image]][download-url]
+
+[license-image]: https://img.shields.io/github/license/saucxs/captcha-mini.svg
+[license-url]: https://github.com/saucxs/captcha-mini/blob/master/LICENSE
+[version-image]: https://img.shields.io/github/package-json/v/saucxs/captcha-mini.svg
+[version-url]: https://github.com/saucxs/captcha-mini/blob/master/package-json
+[stars-image]: https://img.shields.io/github/stars/saucxs/captcha-mini.svg
+[stars-url]: https://github.com/saucxs/captcha-mini/stargazers
+[forks-image]: https://img.shields.io/github/forks/saucxs/captcha-mini.svg
+[forks-url]: https://github.com/saucxs/captcha-mini/network
+[issues-image]: https://img.shields.io/github/issues/saucxs/captcha-mini.svg
+[issues-url]: https://github.com/saucxs/captcha-mini/issues
+[download-image]: https://img.shields.io/npm/dm/captcha-mini.svg
+[download-url]: https://npmjs.org/package/captcha-mini
+
+`captcha-mini.js`(~~之前叫captcha~~)是一个生成验证码的插件，使用js和canvas生成的，确保后端服务被暴力攻击，简单判断人机以及系统的安全性，体积小，功能多，支持配置。
 
 验证码插件内容，包含1、功能，验证码插件-使用，2、验证码插件使用，3、支持浏览，4、其他
 
@@ -17,16 +39,16 @@
 
 ## 2、验证码插件-使用
 
-不依赖与其他的插件，实现起来很容易，`captcha.js`是必须要引进的组件
+不依赖与其他的插件，实现起来很容易，`captcha-mini.js`是必须要引进的组件
 
 ### 2.1 本地引入封装的js文件
 
-第一步：获取组件方式：`git clone https://github.com/saucxs/captcha.git`
+第一步：获取组件方式：`git clone https://github.com/saucxs/captcha-mini.git`
 
-第二步：clone后，在需要加验证码的相关页面引入验证码文件"captcha.js"以及准备好装验证码容器:
+第二步：clone后，在需要加验证码的相关页面引入验证码文件"captcha-mini.js"以及准备好装验证码容器:
 引入captcha内容
 ```js
-<script type="text/javascript" src="./captcha.js"></script>
+<script type="text/javascript" src="./captcha-mini.js"></script>
 ```
 
 装验证码的容器
@@ -71,9 +93,9 @@ npm install captcha-mini
 ````
 第二步：引入验证码模块：
 ````
-import Captcha from 'captcha-mini'
+import CaptchaMini from 'captcha-mini'
 或者
-var Captcha = require("captcha-mini")
+var CaptchaMini = require("captcha-mini")
 ````
 第三步：在确保页面DOM加载完毕之后，调用captcha的draw方法(手动加载):
 ```js
