@@ -58,14 +58,14 @@
 第三步：在确保页面DOM加载完毕之后，调用captcha的draw方法(手动加载):
 ```js
  /*不传值，统一走默认值*/
-    let captcha1 = new Captcha();
+    let captcha1 = new CaptchaMini();
     captcha1.draw(document.querySelector('#captcha1'), r => {
         console.log(r, '验证码1');
     });
 ```
 ```js
 /*传值,参数配置值，选择性配置*/
-    let captcha2 = new Captcha({
+    let captcha2 = new CaptchaMini({
         lineWidth: 1,   //线条宽度
         lineNum: 6,       //线条数量
         dotR: 2,          //点的半径
@@ -100,14 +100,14 @@ var CaptchaMini = require("captcha-mini")
 第三步：在确保页面DOM加载完毕之后，调用captcha的draw方法(手动加载):
 ```js
  /*不传值，统一走默认值*/
-    let captcha1 = new Captcha();
+    let captcha1 = new CaptchaMini();
     captcha1.draw(document.querySelector('#captcha1'), r => {
         console.log(r, '验证码1');
     });
 ```
 ```js
 /*传值,参数配置值，选择性配置*/
-    let captcha2 = new Captcha({
+    let captcha2 = new CaptchaMini({
         lineWidth: 1,   //线条宽度
         lineNum: 6,       //线条数量
         dotR: 2,          //点的半径
@@ -133,6 +133,6 @@ Chrome,FireFox,Safari,IE9及以上浏览器
 
 欢迎使用[watermark-dom](https://github.com/saucxs/watermark-dom)插件，功能：给B/S网站系统加一个很浅的dom水印插件。
 
-欢迎使用[captcha-mini](https://github.com/saucxs/captcha)插件，功能：生成验证码的插件，使用js和canvas生成的
+欢迎使用[captcha-mini](https://github.com/saucxs/captcha-mini)插件，功能：生成验证码的插件，使用js和canvas生成的
 
 欢迎使用[watermark-image](https://github.com/saucxs/watermark-image)插件，目前功能：图片打马赛克
